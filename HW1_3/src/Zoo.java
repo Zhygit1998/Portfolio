@@ -6,11 +6,11 @@ public class Zoo {
     int parrot = 24;
     int raccoon = 20;
     public void result() {
-        int year1 = countAnimals(bear, giraffe, elephant, tiger, parrot);
+        int year1 = countAnimals(bear, giraffe,elephant,tiger,parrot);
         System.out.println("Общее количество зверей в зоопарке: - " + year1);
-        int year2 = countAnimalsNestYear(bear, giraffe, elephant, tiger, parrot);
+        int year2 = countAnimalsNestYear(bear, giraffe,elephant,tiger,parrot);
         System.out.println("Общее количество зверей в зоопарке через год: - " + year2);
-        int yearRaccoon = countAnimalsNestYear(bear, giraffe, elephant, tiger, parrot, raccoon);
+        int yearRaccoon = countAnimalsNestYear(bear, giraffe,elephant,tiger,parrot,raccoon);
         System.out.println("Общее количество зверей в зоопарке через год, с завезенными енотами: - " + yearRaccoon);
 
     }
@@ -32,10 +32,10 @@ public class Zoo {
         return result1;
     }
 
-    public static int countAnimalsNestYear(int bear, int giraffe, int elephant, int tiger, int parrot, int raccoon) {
+    public static int countAnimalsNestYear(int bear, int giraffe, int elephant, int tiger, int parrot, int raccoon){
         //Прирост Енотов
         double racoon1 = 0.8;
-        int result2 = (int) (countAnimalsNestYear(12, 14, 16, 18, 24) + (raccoon + raccoon * racoon1));
+        int result2 = (int)(countAnimalsNestYear(bear,giraffe,elephant,tiger,parrot) + (raccoon+raccoon*racoon1));
         return result2;
     }
 }
